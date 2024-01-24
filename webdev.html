@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Web Development</title>
+</head>
+
+<body id="body">
+
+    <header>
+        <div class="container">
+            <h1 class="home-link"><a href="index.html">Welcome to My Page</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Projects</a>
+                        <div class="dropdown-content">
+                            <a href="games.html">Games</a>
+                            <a href="webdev.html">Web Development</a>
+                        </div>
+                    </li>
+                    <li><a href="#footer">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="games" class="container">
+        <h2>Web Apps</h2>
+
+        <div class="game">
+            <div class="game-header">
+                <h3>Books Record</h3>
+            </div>
+            <div class="game-content">
+                <p class="game-description">Web development project for exercise. You can view previous books, enter new ones,
+                    and delete books. Book covers are
+                    received from the API. I used JavaScript for the frontend, Express for the backend, and PostgreSQL for
+                    storing all
+                    information locally.</p>
+                <div class="gallery" id="game2-gallery">
+                    <img src="images/cap01.png" alt="Game 1 Image 1" onclick="openModal('images/cap01.PNG')">
+                    <img src="images/cap02.png" alt="Game 1 Image 2" onclick="openModal('images/cap02.PNG')">
+                    <img src="images/cap03.png" alt="Game 1 Image 3" onclick="openModal('images/cap03.PNG')">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <a href="#top" id="scrollToTop" aria-label="Scroll to Top">&#8679;</a>
+
+    
+    <br><br><br> <br><br><br><br><br><br><br>
+
+    <footer id="footer">
+        <p>&copy; 2024 Ivan Ivkovic. All rights reserved.</p>
+
+        <div class="social-icons">
+            <a href="https://github.com/Iv3k" target="_blank" title="GitHub">
+                <img src="images/github.svg" alt="GitHub Icon">
+            </a>
+            <a href="https://www.linkedin.com/in/ivan-ivkovi%C4%87/" target="_blank" title="LinkedIn">
+                <img src="images/linkedin-original.svg" alt="LinkedIn Icon">
+            </a>
+            <a href="https://bugfactory.itch.io/" target="_blank" title="itch.io">
+                <img src="images/itch-io.svg" alt="itch.io Icon">
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
