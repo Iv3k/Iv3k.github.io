@@ -380,7 +380,18 @@ footer .social-icons img:hover {
     /* Apply grayscale on hover if desired */
 }
 
+#menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 768px) {
+    #menu-icon {
+            display: block;
+            font-size: 25px;
+            line-height: 1.5;
+    }
+
     header nav {
         display: none;
         flex-direction: column;
