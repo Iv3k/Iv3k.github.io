@@ -407,7 +407,7 @@ footer .social-icons img:hover {
     }
 
     header {
-        position: relative;
+        position: fixed;
     }
 
     header #menu-icon {
