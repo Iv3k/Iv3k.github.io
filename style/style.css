@@ -190,6 +190,16 @@ section {
     text-decoration: underline;
 }
 
+.store-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.store-link:hover {
+    text-decoration: underline;
+}
+
 .gallery {
     display: flex;
     overflow-x: auto;
