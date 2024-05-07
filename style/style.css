@@ -385,7 +385,8 @@ footer {
     text-align: center;
     padding: 10px 20px;
     box-sizing: border-box;
-    margin-top: 100px;
+    margin-top: 194px;
+    position: relative;
 }
 
 footer .social-icons img {

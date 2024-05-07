@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Desktop Apps</title>
+</head>
+
+<body id="body">
+
+    <header>
+        <div class="container">
+            <h1 class="home-link"><a href="index.html">Welcome to My Page</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Projects</a>
+                        <div class="dropdown-content">
+                            <a href="games.html">Games</a>
+                            <a href="webdev.html">Web Development</a>
+                            <a href="desktop.html">Desktop Apps</a>
+                        </div>
+                    </li>
+                    <li><a href="#footer">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="games" class="container">
+        <h2>Desktop Apps</h2>
+
+        <div class="game">
+            <div class="game-header">
+                <h3>Ferry Port Simulator</h3>
+            </div>
+            <div class="game-content">
+                <p class="game-description"> You are a hard-working clerk in the ferry port. Your goal
+                is to take care of all vehicles that are coming to the port. You don't know the order
+                of coming, it is random. You shouldn't let them enter the ferry if their fuel is below
+                10%. In case it is, you refuel it. Also, if a bigger vehicle comes, you can check its cargo by
+                the vehicle door.
+                <br> <br>
+                Technology: C# and WPF.
+                </p>
+                <div class="gallery" id="game2-gallery">
+                    <img src="images/ferry01.PNG" alt="Game 1 Image 1" onclick="openModal('images/ferry01.png')">
+                    <img src="images/ferry02.PNG" alt="Game 1 Image 2" onclick="openModal('images/ferry02.png')">
+                    <img src="images/ferry03.PNG" alt="Game 1 Image 3" onclick="openModal('images/ferry03.png')">
+                    <img src="images/ferry04.PNG" alt="Game 1 Image 4" onclick="openModal('images/ferry04.png')">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <a href="#top" id="scrollToTop" aria-label="Scroll to Top">&#8679;</a>
+
+
+    <footer id="footer">
+        <p>&copy; 2024 Ivan Ivkovic. All rights reserved.</p>
+
+        <div class="social-icons">
+            <a href="https://github.com/Iv3k" target="_blank" title="GitHub">
+                <img src="images/github.svg" alt="GitHub Icon">
+            </a>
+            <a href="https://www.linkedin.com/in/ivan-ivkovi%C4%87/" target="_blank" title="LinkedIn">
+                <img src="images/linkedin-original.svg" alt="LinkedIn Icon">
+            </a>
+            <a href="https://bugfactory.itch.io/" target="_blank" title="itch.io">
+                <img src="images/itch-io.svg" alt="itch.io Icon">
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
