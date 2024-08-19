@@ -63,10 +63,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function openModal(imgSrc) {
     var modal = document.getElementById("myModal");
-    document.getElementById('body').classList.add('modal-open'); // Add this line
     var modalImg = document.getElementById("modalImg");
-    
-    // Check if the image is vertical
+
+    // Open the modal and ensure it covers the entire screen
+    modal.style.display = "block";
+
+    // Set the source of the modal image
+    modalImg.src = imgSrc;
+
+    // Add a check for mobile devices to handle image sizing
     var img = new Image();
     img.src = imgSrc;
     img.onload = function() {
@@ -75,8 +80,6 @@ function openModal(imgSrc) {
         } else {
             modalImg.classList.remove("vertical");
         }
-        modal.style.display = "block";
-        modalImg.src = imgSrc;
     };
 }
 
