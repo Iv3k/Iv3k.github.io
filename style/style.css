@@ -408,9 +408,11 @@ footer .social-icons img:hover {
 
 @media screen and (max-width: 768px) {
     #menu-icon {
-            display: block;
-            font-size: 25px;
-            line-height: 1.5;
+        display: block;
+        font-size: 25px;
+        line-height: 1.5;
+        position: relative;
+        left: -15px;
     }
 
     header nav {
@@ -429,6 +431,15 @@ footer .social-icons img:hover {
         display: flex;
     }
 
+    header nav.show ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column; 
+        gap: 10px; 
+    }    
+
     header nav li {
         margin: 0;
         margin-bottom: 10px;
@@ -440,10 +451,20 @@ footer .social-icons img:hover {
 
     header {
         position: fixed;
+        padding: 20px 10px; 
     }
 
-    header #menu-icon {
-        display: block;
-        font-size: 25px;
+    header h1 {
+        font-size: 28px;
+        margin: 0 10px;
+    }
+
+    .self-description {
+        margin: 0 10px; 
+        font-size: 16px;
+    }
+
+    #description {
+        margin: 20px 10px; 
     }
 }
