@@ -1,5 +1,21 @@
 // script.js
 document.addEventListener('DOMContentLoaded', function() {
+    fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+        const headerPlaceholder = document.createElement('div');
+        headerPlaceholder.innerHTML = data;
+        document.body.insertBefore(headerPlaceholder, document.body.firstChild);
+
+        // Initialize the menu toggle functionality after loading the header
+        var menuIcon = document.getElementById('menu-icon');
+        var nav = document.querySelector('nav');
+
+        menuIcon.addEventListener('click', function () {
+            nav.classList.toggle('show');
+        });
+    });
+    
     // Add event listener to each game's gallery
     document.querySelectorAll('.gallery').forEach(function(gallery) {
         let currentIndex = 0;

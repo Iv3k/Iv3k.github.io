@@ -467,4 +467,18 @@ footer .social-icons img:hover {
     #description {
         margin: 20px 10px; 
     }
+
+    .gallery {
+        display: flex;
+        overflow-x: auto; /* Enable horizontal scrolling */
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    }
+
+    .gallery img {
+        flex-shrink: 0;
+        margin-right: 10px;
+        width: 100%; /* Ensure images are responsive */
+        max-width: 200px; /* Limit image width on mobile */
+        height: auto;
+    }
 }
