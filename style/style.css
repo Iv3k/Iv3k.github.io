@@ -1,4 +1,3 @@
-/* style.css */
 html {
     height: 100%;
 }
@@ -204,7 +203,6 @@ section {
     display: flex;
     overflow-x: auto;
     margin-top: auto;
-    /* Align the gallery to the bottom */
 }
 
 .gallery img {
@@ -217,7 +215,6 @@ section {
     cursor: pointer;
 }
 
-/* Image decreasing on click */
 .modal {
     display: none;
     position: fixed;
@@ -258,7 +255,6 @@ section {
 
 body.modal-open header {
     top: -100px;
-    /* Adjust the value to hide the header completely */
 }
 
 #skills {
@@ -323,7 +319,7 @@ h3 {
 .rating {
     font-size: 24px;
     color: #FFD700;
-    /* Gold color for stars */
+    
 }
 
 .certificate-table {
@@ -398,7 +394,6 @@ footer .social-icons img {
 
 footer .social-icons img:hover {
     filter: grayscale(100%);
-    /* Apply grayscale on hover if desired */
 }
 
 #menu-icon {
@@ -470,15 +465,15 @@ footer .social-icons img:hover {
 
     .gallery {
         display: flex;
-        overflow-x: auto; /* Enable horizontal scrolling */
-        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+        overflow-x: auto; 
+        -webkit-overflow-scrolling: touch; 
     }
 
     .gallery img {
         flex-shrink: 0;
         margin-right: 10px;
-        width: 100%; /* Ensure images are responsive */
-        max-width: 200px; /* Limit image width on mobile */
+        width: 100%; 
+        max-width: 200px; 
         height: auto;
     }
 }
